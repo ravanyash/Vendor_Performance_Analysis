@@ -1,182 +1,250 @@
 # 📊 Vendor Performance Analysis
 
-An end-to-end Data Analytics project that analyzes vendor performance using **Python, SQL, SQLite, MySQL, Power BI, and Jupyter Notebook**. The project transforms raw transactional data into meaningful business insights through data cleaning, SQL analysis, feature engineering, and an interactive Power BI dashboard.
+> **End-to-End Data Analytics Project using Python, SQL, SQLite & Power BI**
+
+This project analyzes vendor performance by building a complete data analytics pipeline—from raw transactional data to an interactive Power BI dashboard. The project includes data ingestion, SQL analysis, exploratory data analysis (EDA), KPI generation, automated logging, and dashboard visualization to provide actionable business insights.
 
 ---
 
-## 📌 Project Overview
+## 🌐 Connect With Me
 
-The objective of this project is to analyze vendor purchasing and sales performance, identify top and low-performing vendors, evaluate profitability, and provide actionable business insights through an interactive dashboard.
+**👨‍💻 Author:** Yash Ravangave
 
-The project follows a complete analytics workflow:
+📧 Email: yashravangave13@gmail.com
 
-**Raw CSV Files → SQLite Database → SQL Analysis → Exploratory Data Analysis → Feature Engineering → Vendor Summary Dataset → Business Analysis → Power BI Dashboard**
+💼 LinkedIn: https://www.linkedin.com/in/yash-ravangave/
+
+🌐 Portfolio: https://ravanyash.github.io/yashravangave.github.io/
+
+🐙 GitHub: https://github.com/ravanyash
+
+---
+
+# 📸 Dashboard Preview
+
+> Dashboard Screenshot
+
+```
+data/Dashboard/dashboard.png
+```
+
+---
+
+# 📖 Project Overview
+
+The objective of this project is to evaluate vendor performance using sales, purchases, inventory, and pricing data.
+
+The analysis answers important business questions such as:
+
+- Which vendors generate the highest sales?
+- Which vendors contribute the most profit?
+- Which brands perform best?
+- Which vendors are underperforming?
+- How much capital is blocked in unsold inventory?
+- What is the company's overall profit margin?
+
+The complete workflow demonstrates an end-to-end analytics pipeline using Python, SQL, SQLite, and Power BI.
+
+---
+
+# 🌟 Project Highlights
+
+✔ End-to-End Data Analytics Project
+
+✔ Automated ETL Pipeline
+
+✔ SQLite Database Integration
+
+✔ SQL-Based Business Analysis
+
+✔ Exploratory Data Analysis (EDA)
+
+✔ Feature Engineering
+
+✔ Automated Logging System
+
+✔ KPI Calculation
+
+✔ Interactive Power BI Dashboard
+
+✔ Business Insights & Recommendations
+
+---
+
+# 🛠 Tech Stack
+
+| Category | Technologies |
+|------------|-----------------------------|
+| Programming | Python |
+| Database | SQLite, SQL |
+| Data Manipulation | Pandas, NumPy |
+| Visualization | Matplotlib, Seaborn |
+| Dashboard | Power BI |
+| Development | Jupyter Notebook |
+| Version Control | Git & GitHub |
 
 ---
 
 # 📂 Dataset
 
-The raw datasets used in this project are available here:
+### Dataset Source
 
-🔗 **Google Drive Dataset**
+Google Drive
 
 https://drive.google.com/file/d/1P4pD6dBXr3I58BukHSX6IgwLLPE5uOUR/view?usp=sharing
 
-The dataset contains the following CSV files:
+### Raw Dataset Files
 
-| Dataset | Description |
-|---------|-------------|
-| begin_inventory.csv | Opening inventory records |
-| end_inventory.csv | Closing inventory records |
-| purchase_prices.csv | Vendor purchase pricing information |
-| purchases.csv | Purchase transaction records |
-| sales.csv | Sales transaction records |
-| vendor_invoice.csv | Vendor invoice details |
+- begin_inventory.csv
+- end_inventory.csv
+- purchase_prices.csv
+- purchases.csv
+- sales.csv
+- vendor_invoice.csv
 
-These datasets are imported into a SQLite database before analysis.
+These six datasets contain inventory, purchasing, pricing, sales, and vendor transaction information.
 
 ---
 
-# 🚀 Project Workflow
+# 🔄 Project Workflow
 
 ## Step 1 — Data Collection
 
-Downloaded the raw datasets consisting of six CSV files containing inventory, purchase, sales, pricing, and vendor information.
+Downloaded six CSV datasets containing inventory, purchases, pricing, sales, and vendor invoice information.
 
----
+↓
 
-## Step 2 — Database Creation (SQLite)
+## Step 2 — Database Creation (ETL)
 
-Python script:
+**Script**
 
 ```
 scripts/ingestion_db.py
 ```
 
-Responsibilities:
+Responsibilities
 
 - Reads all raw CSV files
 - Creates SQLite database
-- Creates required database tables
-- Loads all datasets into SQLite
+- Creates database tables
+- Imports every dataset into SQLite
+- Handles data ingestion automatically
+- Generates execution logs
 
-This serves as the project's ETL pipeline.
+### Output
 
----
+SQLite Database
+
+### Log Generated
+
+```
+logs/ingestion_db.log
+```
+
+The log file records:
+
+- Database creation
+- Table creation
+- CSV import status
+- Number of records imported
+- Success messages
+- Error messages (if any)
+
+↓
 
 ## Step 3 — Exploratory Data Analysis (EDA)
 
-Notebook:
+**Notebook**
 
 ```
 notebooks/Exploratory Data Analysis.ipynb
 ```
 
-Tasks performed:
+Performed
 
 - Data Cleaning
 - Missing Value Analysis
+- Duplicate Removal
 - Outlier Detection
-- Feature Engineering
+- SQL Queries
 - Correlation Analysis
-- Distribution Analysis
-- SQL Query Analysis
-- Business Insight Generation
+- Feature Engineering
+- Business Insights
 
-Numerous SQL queries were executed on the SQLite database to understand purchasing patterns, inventory movement, vendor performance, and sales trends.
+The notebook also contains multiple SQL queries executed to understand the business data before building the final dataset.
 
----
+↓
 
 ## Step 4 — Vendor Summary Generation
 
-Python Script:
+**Script**
 
 ```
 scripts/get_vendor_summary.py
 ```
 
-Responsibilities:
+Responsibilities
 
-- Executes SQL joins across multiple tables
-- Aggregates vendor-level metrics
-- Creates the final analytical dataset
+- Executes SQL joins
+- Aggregates vendor data
+- Calculates KPIs
+- Generates Vendor Sales Summary
+- Exports processed CSV
 
-Generated file:
+### Output
 
 ```
 Data/vendor_sales_summary.csv
 ```
 
-This dataset is used for all further analysis and dashboard creation.
+### Log Generated
 
----
+```
+logs/vendor_summary.log
+```
+
+The log records:
+
+- SQL query execution
+- Vendor summary generation
+- CSV export status
+- Processing messages
+- Error tracking
+
+↓
 
 ## Step 5 — Final Business Analysis
 
-Notebook:
+**Notebook**
 
 ```
 notebooks/Vendor_Performance_Analysis.ipynb
 ```
 
-This notebook performs the complete vendor performance analysis.
+Performed
 
-It includes:
-
-- KPI Calculations
+- KPI Analysis
 - Vendor Performance Analysis
+- Brand Performance Analysis
 - Profitability Analysis
+- Purchase Contribution Analysis
 - Statistical Analysis
-- Business Insights
-- Visualizations
+- Data Visualization
+- Business Recommendations
 
----
+This notebook uses the generated Vendor Sales Summary dataset to perform complete business analysis.
 
-## Step 6 — Interactive Dashboard
+↓
 
-Power BI Dashboard:
+## Step 6 — Dashboard Development
+
+**Power BI Dashboard**
 
 ```
 Dashboard/Vendor_Performance_Analysis.pbix
 ```
 
-Dashboard Preview:
-
-```
-Dashboard/dashboard.png
-```
-
-Dashboard KPIs:
-
-- Total Sales
-- Total Purchase
-- Gross Profit
-- Profit Margin
-- Unsold Capital
-
-Dashboard Visualizations:
-
-- Purchase Contribution %
-- Top Vendors by Sales
-- Top Brands by Sales
-- Low Performing Vendors
-- Low Performing Brands
-
----
-
-# ❓ Business Questions Answered
-
-This project answers the following business questions:
-
-- Which vendors generate the highest sales?
-- Which vendors generate the highest profit?
-- Which vendors contribute most to purchases?
-- Which brands generate maximum revenue?
-- Which vendors perform poorly?
-- Which brands perform poorly?
-- What is the overall profit margin?
-- How much capital is locked in unsold inventory?
-- How efficiently are vendors contributing to business growth?
+The final dashboard visualizes all KPIs and business insights interactively.
 
 ---
 
@@ -186,100 +254,192 @@ This project answers the following business questions:
 Vendor_Performance_Analysis
 │
 ├── data
-│   ├── Dashboard
-│   │   ├── Vendor_Performance_Analysis.pbix
-│   │   └── dashboard.png
-│   │
-│   ├── Data
-│   │   └── vendor_sales_summary.csv
-│   │
-│   ├── notebooks
-│   │   ├── Exploratory Data Analysis.ipynb
-│   │   ├── Vendor_Performance_Analysis.ipynb
-│   │   └── python2db.ipynb
-│   │
-│   ├── scripts
-│   │   ├── ingestion_db.py
-│   │   ├── get_vendor_summary.py
-│   │   └── import_db_mysql.py
-│   │
-│   ├── report
-│   │   └── Vendor-Performance-Analysis.pdf
-│   │
-│   └── logs
+│
+├── Dashboard
+│   ├── Vendor_Performance_Analysis.pbix
+│   └── dashboard.png
+│
+├── Data
+│   └── vendor_sales_summary.csv
+│
+├── logs
+│   ├── ingestion_db.log
+│   └── vendor_summary.log
+│
+├── notebooks
+│   ├── Exploratory Data Analysis.ipynb
+│   ├── Vendor_Performance_Analysis.ipynb
+│   └── python2db.ipynb
+│
+├── scripts
+│   ├── ingestion_db.py
+│   ├── get_vendor_summary.py
+│   └── import_db_mysql.py
+│
+├── report
+│   └── Vendor-Performance-Analysis.pdf
 │
 └── README.md
 ```
 
 ---
 
-# 🛠️ Technologies Used
+# 📄 Project Files
 
-- Python
-- Pandas
-- NumPy
-- SQLite3
-- MySQL
-- SQL
-- Matplotlib
-- Seaborn
-- Jupyter Notebook
-- Power BI
+### scripts/
+
+**ingestion_db.py**
+
+- Creates SQLite database
+- Imports all CSV files
+- Automates ETL process
+- Generates ingestion logs
 
 ---
 
-# 📈 Key Insights
+**get_vendor_summary.py**
 
-- Identified the highest revenue-generating vendors.
-- Determined vendors contributing the highest gross profit.
-- Measured overall business profit margin.
+- Executes SQL queries
+- Creates vendor summary dataset
+- Exports processed CSV
+- Generates execution logs
+
+---
+
+**import_db_mysql.py**
+
+- Database connectivity utility used during project development.
+
+---
+
+### notebooks/
+
+**Exploratory Data Analysis.ipynb**
+
+Contains
+
+- Data Cleaning
+- SQL Analysis
+- Missing Value Analysis
+- Outlier Detection
+- Feature Engineering
+- Correlation Analysis
+- Business Insights
+
+---
+
+**Vendor_Performance_Analysis.ipynb**
+
+Contains
+
+- Final KPI calculations
+- Vendor Analysis
+- Brand Analysis
+- Profitability Analysis
+- Business Visualizations
+
+---
+
+### Dashboard/
+
+Contains
+
+- Power BI Dashboard (.pbix)
+- Dashboard Screenshot
+
+---
+
+### Data/
+
+Contains the processed dataset used for dashboard creation.
+
+```
+vendor_sales_summary.csv
+```
+
+---
+
+### report/
+
+Contains the final business report.
+
+```
+Vendor-Performance-Analysis.pdf
+```
+
+---
+
+### logs/
+
+Contains execution logs generated automatically by Python scripts.
+
+#### ingestion_db.log
+
+Stores
+
+- Database creation status
+- Table creation status
+- CSV import details
+- Success messages
+- Error messages
+
+#### vendor_summary.log
+
+Stores
+
+- SQL query execution
+- Vendor summary generation
+- CSV export status
+- Processing information
+- Error tracking
+
+Logging was implemented using Python's built-in **logging** module to improve debugging, monitoring, and maintainability.
+
+---
+
+# 📈 Dashboard KPIs
+
+- Total Sales
+- Total Purchase
+- Gross Profit
+- Profit Margin
+- Unsold Capital
+
+---
+
+# 📊 Dashboard Visualizations
+
+- Purchase Contribution %
+- Top Vendors by Sales
+- Top Brands by Sales
+- Low Performing Vendors
+- Low Performing Brands
+
+---
+
+# 💡 Key Business Insights
+
+- Identified top-performing vendors based on sales.
+- Measured vendor profitability using Gross Profit and Profit Margin.
 - Evaluated purchase contribution by vendor.
-- Analyzed low-performing vendors and brands.
+- Identified low-performing vendors and brands.
 - Estimated unsold inventory capital.
-- Built an executive dashboard for business decision-making.
+- Built an executive Power BI dashboard to support business decision-making.
 
 ---
 
-# 📄 Project Report
+# 📑 Project Report
 
-The complete project report is available in:
-
-```
-data/report/Vendor-Performance-Analysis.pdf
-```
-
----
-
-# 📷 Dashboard Preview
-
-Dashboard Image:
+The complete project report is available in
 
 ```
-data/Dashboard/dashboard.png
+report/Vendor-Performance-Analysis.pdf
 ```
 
 ---
 
-# 👨‍💻 Author
+# ⭐ Support
 
-**Yash Ravangave**
+If you found this project helpful or interesting, please consider giving this repository a ⭐ on GitHub.
 
-📧 Email
-
-yashravangave13@gmail.com
-
-💼 LinkedIn
-
-https://www.linkedin.com/in/yash-ravangave/
-
-🌐 Portfolio
-
-https://ravanyash.github.io/yashravangave.github.io/
-
-🐙 GitHub
-
-https://github.com/RavanYash
-
----
-
-## ⭐ If you found this project helpful, consider giving it a star on GitHub!
+Thank you for visiting this project!
