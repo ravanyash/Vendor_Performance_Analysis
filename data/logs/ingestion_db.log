@@ -1,0 +1,81 @@
+2026-07-23 14:06:41,466 - INFO - Ingesting begin_inventory.csv in db
+2026-07-23 14:06:43,847 - INFO - Ingesting end_inventory.csv in db
+2026-07-23 14:06:55,909 - INFO - Ingesting purchases.csv in db
+2026-07-23 14:07:41,149 - INFO - Ingesting purchase_prices.csv in db
+2026-07-23 14:08:08,839 - INFO - Ingesting sales.csv in db
+2026-07-23 14:17:34,919 - INFO - Ingesting vendor_invoice.csv in db
+2026-07-23 14:17:35,074 - INFO - ----------------Ingestion Complete---------------
+2026-07-23 14:17:35,074 - INFO - Total Time Taken: {total_time} minutes
+2026-07-23 14:19:24,937 - INFO - Ingesting begin_inventory.csv in db
+2026-07-23 14:19:27,797 - INFO - Ingesting end_inventory.csv in db
+2026-07-23 14:19:37,686 - INFO - Ingesting purchases.csv in db
+2026-07-23 14:20:32,367 - INFO - Ingesting purchase_prices.csv in db
+2026-07-23 14:20:58,502 - INFO - Ingesting sales.csv in db
+2026-07-23 14:31:02,747 - INFO - Ingesting vendor_invoice.csv in db
+2026-07-23 14:31:03,039 - INFO - ----------------Ingestion Complete---------------
+2026-07-23 14:31:03,039 - INFO - Total Time Taken: 11.642935609817505 minutes
+2026-07-23 14:34:50,037 - INFO - ------------ Data Ingestion Started ------------
+2026-07-23 14:34:50,037 - INFO - Reading file: begin_inventory.csv
+2026-07-23 14:34:53,404 - INFO - Successfully ingested table 'begin_inventory'
+2026-07-23 14:34:53,404 - INFO - Reading file: end_inventory.csv
+2026-07-23 14:34:56,678 - INFO - Successfully ingested table 'end_inventory'
+2026-07-23 14:34:56,678 - INFO - Reading file: purchases.csv
+2026-07-23 14:35:49,345 - INFO - Successfully ingested table 'purchases'
+2026-07-23 14:35:49,345 - INFO - Reading file: purchase_prices.csv
+2026-07-23 14:35:49,623 - INFO - Successfully ingested table 'purchase_prices'
+2026-07-23 14:35:49,623 - INFO - Reading file: sales.csv
+2026-07-23 14:44:43,010 - INFO - Successfully ingested table 'sales'
+2026-07-23 14:44:43,016 - INFO - Reading file: vendor_invoice.csv
+2026-07-23 14:44:44,357 - INFO - Successfully ingested table 'vendor_invoice'
+2026-07-23 14:44:44,358 - INFO - ------------ Data Ingestion Completed ------------
+2026-07-23 14:44:44,358 - INFO - Total Time Taken: 9.91 minutes
+2026-07-23 18:48:36,033 - INFO - ------------ Vendor Summary Pipeline Started ------------
+2026-07-23 18:48:36,034 - INFO - Creating Vendor Summary Table...
+2026-07-23 18:48:36,034 - INFO - Vendor summary created successfully.
+2026-07-23 18:49:00,415 - INFO - Cleaning Data...
+2026-07-23 18:49:00,415 - INFO - Cleaning vendor summary data...
+2026-07-23 18:49:00,432 - INFO - Ingesting Data into Database...
+2026-07-23 18:49:00,719 - INFO - Successfully ingested table 'vendor_sales_summary'
+2026-07-23 18:49:00,719 - INFO - Vendor Summary Table Created Successfully.
+2026-07-23 18:49:00,720 - INFO - Execution Time: 24.69 seconds
+2026-07-23 18:49:00,720 - INFO - ------------ Vendor Summary Pipeline Completed ------------
+2026-07-23 18:50:15,207 - INFO - ------------ Vendor Summary Pipeline Started ------------
+2026-07-23 18:50:15,207 - INFO - Creating Vendor Summary Table...
+2026-07-23 18:50:15,207 - INFO - Vendor summary created successfully.
+2026-07-23 18:50:38,910 - INFO - Cleaning Data...
+2026-07-23 18:50:38,910 - INFO - Cleaning vendor summary data...
+2026-07-23 18:50:38,929 - INFO - Ingesting Data into Database...
+2026-07-23 18:50:39,204 - INFO - Successfully ingested table 'vendor_sales_summary'
+2026-07-23 18:50:39,204 - INFO - Vendor Summary Table Created Successfully.
+2026-07-23 18:50:39,205 - INFO - Execution Time: 24.00 seconds
+2026-07-23 18:50:39,205 - INFO - ------------ Vendor Summary Pipeline Completed ------------
+2026-07-23 18:57:21,280 - INFO - ------------ Vendor Summary Pipeline Started ------------
+2026-07-23 18:57:21,280 - INFO - Creating Vendor Summary Table...
+2026-07-23 18:57:21,280 - INFO - Vendor summary created successfully.
+2026-07-23 18:57:45,053 - INFO - Cleaning Data...
+2026-07-23 18:57:45,053 - INFO - Cleaning vendor summary data...
+2026-07-23 18:57:45,072 - INFO - Ingesting Data into Database...
+2026-07-23 18:57:45,360 - INFO - Successfully ingested table 'vendor_sales_summary'
+2026-07-23 18:57:45,360 - INFO - Vendor Summary Table Created Successfully.
+2026-07-23 18:57:45,361 - INFO - Execution Time: 24.08 seconds
+2026-07-23 18:57:45,361 - INFO - ------------ Vendor Summary Pipeline Completed ------------
+2026-07-23 18:58:01,565 - INFO - ------------ Vendor Summary Pipeline Started ------------
+2026-07-23 18:58:01,565 - INFO - Creating Vendor Summary Table...
+2026-07-23 18:58:01,566 - INFO - Vendor summary created successfully.
+2026-07-23 18:58:25,488 - INFO - Cleaning Data...
+2026-07-23 18:58:25,488 - INFO - Cleaning vendor summary data...
+2026-07-23 18:58:25,506 - INFO - Ingesting Data into Database...
+2026-07-23 18:58:25,772 - INFO - Successfully ingested table 'vendor_sales_summary'
+2026-07-23 18:58:25,772 - INFO - Vendor Summary Table Created Successfully.
+2026-07-23 18:58:25,772 - INFO - Execution Time: 24.21 seconds
+2026-07-23 18:58:25,772 - INFO - ------------ Vendor Summary Pipeline Completed ------------
+2026-07-23 19:00:29,535 - INFO - ------------ Vendor Summary Pipeline Started ------------
+2026-07-23 19:00:29,535 - INFO - Creating Vendor Summary Table...
+2026-07-23 19:00:29,535 - INFO - Vendor summary created successfully.
+2026-07-23 19:00:53,849 - INFO - Cleaning Data...
+2026-07-23 19:00:53,849 - INFO - Cleaning vendor summary data...
+2026-07-23 19:00:53,868 - INFO - Ingesting Data into Database...
+2026-07-23 19:00:53,947 - INFO - vendor_sales_summary table created successfully.
+2026-07-23 19:00:53,947 - INFO - Vendor Summary Table Created Successfully.
+2026-07-23 19:00:53,948 - INFO - Execution Time: 24.42 seconds
+2026-07-23 19:00:53,948 - INFO - ------------ Vendor Summary Pipeline Completed ------------
